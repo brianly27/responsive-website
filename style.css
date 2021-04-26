@@ -1,18 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
 *
 {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+
 body
 {
-    background: #457b9d;
+    background: #a8dadc;
+    height: 1000px;
 }
 
 .wrapper
 {
     position: relative;
+    transition: 0.5s;
+    left: 0px;
+}
+
+.wrapper.active
+{
+    left: -400px;
 }
 
 header
@@ -21,11 +34,18 @@ header
     top: 0;
     left: 0;
     width: 100%;
-    padding: 40px 100px;
+    padding: 40px 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 10000;
+    transition: 0.5s;
+}
+
+header.sticky
+{
+    padding: 20px, 100px;
+    background: #162c3b;
 }
 
 header .logo
@@ -41,12 +61,21 @@ header .logo
 header .toggle
 {
     position: relative;
-    height: 36px;
-    width: 28px;
-    background: url(./img/icon.png);
+    height: 20px;
+    width: 20px;
+    background: url(./resources/toggle.png);
     background-size: cover;
     cursor: pointer;
+    align-items: flex-end;
+}
 
+header .toggle.active
+{
+    height: 20px;
+    width: 20px;
+    background: url(./resources/close.png);
+    background-size: cover;
+    
 }
 
 .banner
@@ -57,6 +86,7 @@ header .toggle
     display: flex;
     align-items: center;
     justify-content: center;
+    background: #457b9d;
 }
 
 .banner-img
@@ -64,10 +94,11 @@ header .toggle
     position: absolute;
     top: 0;
     left: 0;
-    height: auto;
+    height: 100%;
     width: 100%;
-    z-index: -1;
-    opacity: 0.75;
+    object-fit: cover;
+    opacity: 0.25;
+
 }
 
 .banner .content
@@ -90,6 +121,82 @@ header .toggle
     font-size: 18;
     color: #ffffff;
 }
+
+.sidebar 
+{
+    position: fixed;
+    right: -400px;
+    top: 0;
+    width: 400px;
+    height: 100%;
+    background: #457b9d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 101;
+    transition: 0.5s;
+}
+
+.sidebar.active{
+    right: 0px;
+}
+
+.sidebar ul{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar ul li{
+    list-style: none;
+    margin: 5px 0;
+}
+
+.sidebar ul li a{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover{
+    color: #3f8ffc;
+}
+
+.about
+{
+    position: relative;
+    width: 100%;
+    background: #162c3b;
+    display: flex;
+}
+
+.about .content-box
+{
+    width: 50%;
+    background: #162c3b;
+    padding: 100px;
+}
+
+.about .content-box .heading
+{
+    position: relative;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.about .content-box .text
+{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300px;
+}
+
+
+
 /* Color pallet from coolers.co
 [{"name":"Imperial Red","hex":"e63946","rgb":[230,57,70],"cmyk":[0,75,70,10],"hsb":[355,75,90],"hsl":[355,78,56],"lab":[52,66,34]},
 {"name":"Honeydew","hex":"f1faee","rgb":[241,250,238],"cmyk":[4,0,5,2],"hsb":[105,5,98],"hsl":[105,55,96],"lab":[97,-5,5]},
