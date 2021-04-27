@@ -198,7 +198,7 @@ header .toggle.active
     letter-spacing: 1px;
 }
 
-.img-box
+.about .img-box
 {
     position: relative;
     width: 50%;
@@ -234,6 +234,7 @@ header .toggle.active
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 100;
 }
 
 .container .service-box img
@@ -246,6 +247,37 @@ header .toggle.active
     font-weight: 500px;
     font-size: 20px;
     letter-spacing: 1px;
+}
+
+.technology
+{
+    position: relative;
+    background:#3f8ffc;
+    width: 100%;
+    padding: 100px;
+    padding-top: 300px;
+    margin-top: -300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.technology .content-box
+{
+    position: relative;
+    max-width: 800px;
+}
+
+.technology .img-box
+{
+    position: relative;
+    max-width: 250px;
+}
+
+.technology .img-box img
+{
+    max-width: 100%;
+    filter: invert(1);
 }
 /* Color pallet from coolers.co
 [{"name":"Imperial Red","hex":"e63946","rgb":[230,57,70],"cmyk":[0,75,70,10],"hsb":[355,75,90],"hsl":[355,78,56],"lab":[52,66,34]},
