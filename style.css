@@ -419,6 +419,82 @@ header .toggle.active
     font-size: 18px;
     font-weight: 300;
 }
+
+.contact
+{
+    position: relative;
+    padding: 100px;
+    text-align: center;
+    background: #162c3b;
+
+}
+
+.about .img-box2
+{
+    position: relative;
+    width: 50%;
+    background-image: url(./resources/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.red-bg
+{
+    background-image: url(./resources/red.jpg) !important;
+    background-size: cover;
+    background-position: center;
+}
+
+.form
+{
+    position: relative;
+}
+
+.form .input-box
+{
+    margin-bottom: 40px;
+}
+.form .input-box input
+{
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.form .input-box input::placeholder,
+.form .input-box textarea::placeholder
+{
+    color: #fff;
+}
+.form .input-box textarea
+{
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 150;
+    color: #fff;
+    min-height: 300px;
+    border-bottom: 2px solid #fff;
+}
+.form .input-box input[type="submit"]
+{
+    width: 150px;
+    background: #fff;
+    color: #111;
+    cursor: pointer;
+    font-weight: 400;
+}
 /* Color pallet from coolers.co
 [{"name":"Imperial Red","hex":"e63946","rgb":[230,57,70],"cmyk":[0,75,70,10],"hsb":[355,75,90],"hsl":[355,78,56],"lab":[52,66,34]},
 {"name":"Honeydew","hex":"f1faee","rgb":[241,250,238],"cmyk":[4,0,5,2],"hsb":[105,5,98],"hsl":[105,55,96],"lab":[97,-5,5]},
