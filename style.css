@@ -312,6 +312,49 @@ header .toggle.active
 {
     opacity: 1;
 }
+
+.testimonials
+{
+    position: relative;
+    padding: 100px;
+    background: #12222d;
+    text-align: center;
+}
+
+.testimonials .container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    flex-wrap: wrap;
+}
+
+.testimonials .container .content-box
+{
+    position: relative;
+    background: #fff;
+    padding: 60px 50px;
+    margin: 10px;
+    width: 540px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials .container .content-box p
+{
+    font-style: italic;
+}
+
+.testimonials .container .content-box h3
+{
+    width: 100%;
+    text-align: left;
+    font-weight: 500;
+    color: #383ffc;
+}
 /* Color pallet from coolers.co
 [{"name":"Imperial Red","hex":"e63946","rgb":[230,57,70],"cmyk":[0,75,70,10],"hsb":[355,75,90],"hsl":[355,78,56],"lab":[52,66,34]},
 {"name":"Honeydew","hex":"f1faee","rgb":[241,250,238],"cmyk":[4,0,5,2],"hsb":[105,5,98],"hsl":[105,55,96],"lab":[97,-5,5]},
