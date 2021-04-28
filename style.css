@@ -278,6 +278,39 @@ header .toggle.active
 {
     max-width: 100%;
     filter: invert(1);
+
+}
+
+.client
+{
+    position: relative;
+    padding-top: 100px;
+    background: #162c3b;
+    text-align: center;
+}
+
+.client .img-box
+{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.client .img-box img
+{
+    display: inline-block;
+    position: relative;
+    max-width: 200px;
+    margin: 20;
+    opacity: 0.25;
+    cursor: pointer;
+}
+
+.client .img-box img:hover
+{
+    opacity: 1;
 }
 /* Color pallet from coolers.co
 [{"name":"Imperial Red","hex":"e63946","rgb":[230,57,70],"cmyk":[0,75,70,10],"hsb":[355,75,90],"hsl":[355,78,56],"lab":[52,66,34]},
