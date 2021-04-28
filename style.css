@@ -12,7 +12,7 @@
 
 body
 {
-    background: #a8dadc;
+    background: #12222d;
     height: 1000px;
 }
 
@@ -354,6 +354,70 @@ header .toggle.active
     text-align: left;
     font-weight: 500;
     color: #383ffc;
+}
+
+.team
+{
+    position: relative;
+    padding: 0 100px 100px;
+    text-align: center;
+}
+
+.team .container
+{
+    margin-top: 30px;
+}
+
+.team .team-box
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.team .team-box .box 
+{
+    margin: 0 10px;
+    width: 260px;
+    padding: 5px;
+    background: #fff;
+}
+
+.team .team-box .box .img-box
+{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.team .team-box .box .img-box img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team .team-box .box .content
+{
+    padding: 15px;
+}
+
+.team .team-box .box .content h2
+{
+    position: relative;
+    font-style: 18px;
+    line-height: 1.2em;
+}
+
+.team .team-box .box .content h2 span
+{
+    position: relative;
+    font-size: 18px;
+    font-weight: 300;
 }
 /* Color pallet from coolers.co
 [{"name":"Imperial Red","hex":"e63946","rgb":[230,57,70],"cmyk":[0,75,70,10],"hsb":[355,75,90],"hsl":[355,78,56],"lab":[52,66,34]},
