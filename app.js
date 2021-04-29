@@ -1,3 +1,8 @@
+sal({
+    threshold: 1,
+    once: false,
+  });
+  
 function toggleClassName() {
     let sidebar = document.querySelector('.sidebar');
     let wrapper = document.querySelector('.wrapper');

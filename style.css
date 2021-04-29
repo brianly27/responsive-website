@@ -285,7 +285,7 @@ header .toggle.active
 .client
 {
     position: relative;
-    padding-top: 100px;
+    padding: 100px;
     background: #162c3b;
     text-align: center;
 }
@@ -529,6 +529,108 @@ header .toggle.active
 {
     max-width: 20px;
     filter: invert(1);
+}
+
+@media (max-width: 991px)
+{
+    header,
+    header.sticky
+    {
+    padding: 20px, 50px;
+    }
+    .sidebar ul li a {
+        font-size: 24px;
+    }
+    .banner {
+        padding: 50px;
+    }
+    .banner .content h2 {
+        font-size: 36px;
+    }
+    .banner .content p {
+        font-size: 16;
+    }
+    .about {
+        flex-direction: column;
+    }
+    .about .content-box 
+    {
+        width: 100%;
+        padding: 50px;
+    }
+    .about .img-box 
+    {
+        min-height: 400px;
+        width: 100%;
+    }
+    .services {
+        padding: 50px;
+    }
+    .container {
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .container .service-box 
+    {
+        width: 300px;
+        height: 300px;
+        margin: 20px;
+    }
+    .technology 
+    {
+        padding: 50px;
+        padding-top: 300px;
+        margin-top: -300px;
+        align-items: center;
+        flex-direction: column;
+    }
+    .technology .img-box 
+    {
+        margin-top: 40px;
+    }
+    .client {
+        padding: 50px;
+    }
+    .client .img-box 
+    {
+        justify-content: center;
+    }
+    .client .img-box img 
+    {
+        padding: 10px;
+    }
+    .testimonials 
+    {
+        padding: 50px;
+    }
+    .testimonials .container
+    {
+        margin: 0;
+    }
+    .testimonials .container .content-box 
+    {
+        padding: 40px 30px;
+    }
+    .team 
+    {
+        padding: 0 50px 50px;
+    }
+    .contact 
+    {
+        padding: 50px;
+    }
+    .footer 
+    {
+        padding: 20px 50px;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .footer p {
+        text-align: center;
+    }
+    .footer ul {
+        margin-top: 20px;
+    }
 }
 /* Color pallet from coolers.co
 [{"name":"Imperial Red","hex":"e63946","rgb":[230,57,70],"cmyk":[0,75,70,10],"hsb":[355,75,90],"hsl":[355,78,56],"lab":[52,66,34]},
