@@ -20,18 +20,18 @@
             <!-- sidebar -->
             <div class="sidebar">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Clients</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#home" onclick="toggleClassName();">Home</a></li>
+                    <li><a href="#about" onclick="toggleClassName();">About</a></li>
+                    <li><a href="#services" onclick="toggleClassName();">Services</a></li>
+                    <li><a href="#client" onclick="toggleClassName();">Clients</a></li>
+                    <li><a href="#testimonials" onclick="toggleClassName();">Testimonials</a></li>
+                    <li><a href="#team" onclick="toggleClassName();">Team</a></li>
+                    <li><a href="#contact" onclick="toggleClassName();">Contact Us</a></li>
                 </ul>
             </div>
 
             <!-- banner -->
-            <div class="banner">
+            <div class="banner" id="home">
                 <img class="banner-img" src="./resources/bg.jpg" alt="">
                 <div class="content">
                     <h2>Banner Text</h2>
@@ -42,7 +42,7 @@
             </div>
 
             <!-- about -->
-            <section class="about">
+            <section class="about" id="about">
                 <div class="content-box">
                     <h2 class="heading">About Us</h2>
                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere velit, ea, quisquam quae officia placeat fugit delectus sit iste perferendis cum similique illum aspernatur harum a, distinctio qui mollitia ipsum assumenda voluptas repellendus quas itaque. Veritatis sit temporibus tenetur mollitia et quasi in itaque. Aspernatur placeat illum eius nulla maiores? Voluptatum hic dolores, cum at deserunt dolore officia corporis nihil nostrum ab, pariatur voluptatibus, eum maiores assumenda sequi cupiditate! Autem cum est repellendus necessitatibus fuga incidunt velit voluptatibus ut aliquam beatae. Pariatur veniam nemo et exercitationem nam tempore reprehenderit, provident ipsa illum officia assumenda id sapiente facere necessitatibus enim quis.
@@ -53,7 +53,7 @@
             </section>
 
             <!-- services -->
-            <section class="services">
+            <section class="services" id="services">
                 <h2 class="heading">Our Services</h2>
                 <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo esse perferendis cum numquam nulla aspernatur itaque saepe, animi, blanditiis magni deserunt non quas dolorem dignissimos laborum quod nobis. Aut beatae libero a, unde suscipit itaque repellendus?</p>  
                 <p class="text">Aliquid ipsam, adipisci perferendis itaque nesciunt! Facilis voluptates officia voluptatibus iste cumque. Atque, iusto.</p>
@@ -91,7 +91,7 @@
             </section>
 
             <!-- clients -->
-            <section class="client">
+            <section class="client" id="client">
                 <h2 class="heading"> Our Clients</h2>
                 <p class="text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quibusdam possimus quos, placeat tenetur nisi, asperiores assumenda cum natus accusantium soluta quod quasi dicta ipsum molestias eos amet eveniet sunt.</p>
                 <div class="img-box">
@@ -103,7 +103,7 @@
             </section>
 
             <!-- testimonials -->
-            <section class="testimonials">
+            <section class="testimonials" id="testimonials">
                 <h2 class="heading">What our clients say</h2>
                 <div class="container">
                     <div class="content-box">
@@ -124,7 +124,7 @@
             </section>
 
             <!-- team -->
-            <section class="team">
+            <section class="team" id="team">
                 <h2 class="heading">Our Team</h2>
                 <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, quod necessitatibus eum qui ullam magnam veniam quia, provident neque cum vel maxime earum aspernatur sint aperiam impedit dicta illum? Animi!</p>
                 <div class="container">
@@ -172,7 +172,7 @@
             </section>
 
             <!-- contact -->
-            <section class="contact">
+            <section class="contact" id="contact">
                 <div>
                     <h2 class="heading">Contact Us</h2>
                     <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos maiores vero, explicabo impedit consequuntur recusandae, dolorem repellat unde illum facilis adipisci sunt doloribus ab nemo numquam illo molestiae, error ipsam.</p>
@@ -199,6 +199,17 @@
                     </div>
                 </div>
                 <div class="img-box2"></div> 
+            </section>
+
+            <!-- footer -->
+            <section class="footer">
+                <p class="text">Developed by Brian Ly, Design inspired by Muhammad Irshad</p>
+                <ul>
+                    <li class="text">Follow us on:</li>
+                    <li><a href=""><img src="./resources/facebook.png" alt=""></a></li>
+                    <li><a href=""><img src="./resources/twitter.png" alt=""></a></li>
+                    <li><a href=""><img src="./resources/linkedin.png" alt=""></a></li>
+                </ul>
             </section>
         </div>
         <script src="./app.js">

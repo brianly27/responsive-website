@@ -2,10 +2,11 @@
 
 *
 {
-    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -494,6 +495,40 @@ header .toggle.active
     color: #111;
     cursor: pointer;
     font-weight: 400;
+}
+
+.footer
+{
+    position: relative;
+    background: #162c3b;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer ul
+{
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+
+}
+.footer ul li
+{
+    list-style: none;
+}
+.footer ul li a
+{
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px; 
+}
+
+.footer ul li a img
+{
+    max-width: 20px;
+    filter: invert(1);
 }
 /* Color pallet from coolers.co
 [{"name":"Imperial Red","hex":"e63946","rgb":[230,57,70],"cmyk":[0,75,70,10],"hsb":[355,75,90],"hsl":[355,78,56],"lab":[52,66,34]},
